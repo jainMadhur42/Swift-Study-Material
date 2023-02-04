@@ -9,5 +9,8 @@
         <page name='Practice'/>
         <page name='Dictnory'/>
         <page name='Tuple'/>
+        <page name='HigherOrderFunction'/>
+        <page name='Function'/>
+        <page name='Closure'/>
     </pages>
 </playground>

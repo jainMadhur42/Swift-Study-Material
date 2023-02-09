@@ -155,44 +155,85 @@ swap(a: &a, b: &b)
 print(a)
 print(b)
 
+
+
+// dic 4, 5, 6, 7, 6, 5, 3, 4, 9
+// 4 -> 1, 5-> 2, 6-> 3, 7->4, 3->5, 9-> 6
+//if emelment is not presenet
+//    increment counter
+//    add element in Dictionary
+// if element is alredy present then don't do annything just move to next lement
+
 // Write a swift function that counts the number of unique values in an array.
 // eg. input : [1, 2, 3, 3] —> output : 3
 // input : [4, 5, 6, 7, 6, 5, 3, 4, 9] —> output: 6
 // Dictnory
 
-//
-//func addTwoInts(_ a: Int,_ b: Int) -> Int { a + b }
-//func mulTwoInts(_ a: Int,_ b: Int) -> Int { a * b }
-//
-//var mathmatics: (Int, Int) -> Int = addTwoInts
-//print("addTwoInts \(mathmatics(5,2))")
-//mathmatics = mulTwoInts
-//print("mulTwoInts \(mathmatics(5,2))")
-//
-//func printMathResult(_ mathFunction: (Int, Int) -> Int, _ a: Int, _ b: Int) {
-//    print("printMathResult \(mathFunction(a,b))")
-//}
-//
-//printMathResult(addTwoInts,12,15)
-//printMathResult(mulTwoInts,12,15)
-//
-//
-//// Function as return type
-//func stepForward(_ input: Int) -> Int {
-//    input + 1
-//}
-//
-//func stepBackward(_ input: Int) -> Int {
-//    input - 1
-//}
-//// True forward
-//// False backward
-//func chooseStep(direction: Bool) -> (Int) -> Int {
-//    direction ? stepForward : stepBackward
-//}
-//
-//let function = chooseStep(direction: false)
+func countUniqueElement(input: [Int]) {
+    var count = 0;
+    var dictnory: [Int: Int] = [:]
+   
+    for i in input {
+        
+        if dictnory[i] == nil {
+            // If value is present that means it is duplicate
+            dictnory[i] = 1
+            count += 1
+        }
+    }
+    print("number of uniqueue elment in array are \(count)");
+}
+
+countUniqueElement(input: [1, 2, 3, 3])
+countUniqueElement(input: [4, 5, 6, 7, 6, 5, 3, 4, 9])
 
 
-//:
-[Next](@next)
+func addTwoInt(number1: Int, number2: Int) -> Int {
+    return number1 + number2
+}
+
+func multiply(number1: Int, number2: Int) -> Int {
+    return number1 * number2
+}
+
+
+var mathFunction: (Int, Int) -> Int
+mathFunction = addTwoInt
+
+print(mathFunction(2,3))
+
+mathFunction = multiply
+print(mathFunction(2,3))
+
+func printMathResult(mathFunction: (Int,Int) -> Int, a: Int, b: Int) {
+    print("printMathResult \(mathFunction(a,b))")
+}
+
+printMathResult(mathFunction: addTwoInt, a: 5, b: 6)
+printMathResult(mathFunction: multiply, a: 5, b: 6)
+
+func area(l: Int, b: Int) -> Int {
+    return (l*b)/2
+}
+printMathResult(mathFunction: area, a: 5, b: 6)
+
+func getMethod(number: Int) -> (Int, Int) -> Int {
+    switch number {
+    case 1:
+        return area
+    case 2:
+        return multiply
+    case 3:
+        return addTwoInt
+    default:
+        print("don't know")
+        return addTwoInt
+    }
+}
+
+var method = getMethod(number: 2)
+
+printMathResult(mathFunction: method,a: 12,b: 14)
+printMathResult(mathFunction: getMethod(number: 1),a: 12,b: 14)
+
+//: [Next](@next)

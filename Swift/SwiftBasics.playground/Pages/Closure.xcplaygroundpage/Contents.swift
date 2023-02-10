@@ -49,5 +49,29 @@ closure()
 //3. autoclosre
 //4. Higher Order function.
 
+var myClosure: (String) -> String = { name -> String in
+    return "welcome \(name)"
+}
+myClosure("Rupali")
+
+
+func passClosure(myClosure: (String) -> String, name: String) {
+    print(myClosure(name))
+}
+passClosure(myClosure: myClosure,name: "Madhur")
+
+passClosure(myClosure: { name in
+    return "My name is \(name)"
+}, name: "Saraswati")
+
+func trailingClosure(closure: (Int) -> String) {
+    closure(12)
+}
+
+trailingClosure { age in
+    var updatedAge = age * 2
+    return "\(updatedAge)"
+}
+
 
 //: [Next](@next)

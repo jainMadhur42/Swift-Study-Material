@@ -74,4 +74,37 @@ trailingClosure { age in
 }
 
 
+// Sorted: Sort String Array
+let array = ["Aman", "Jay", "Radha", "Ajay", "Rekha", "Asha", "Maya"]
+let sortedArray = array.sorted { str1, str2 in
+    return str2 > str1
+}
+print(sortedArray)
+//
+let sortedArray1 = array.sorted { $1 > $0 }
+print(sortedArray1)
+
+
+
+// Map: store Reminder inside the Array
+let array2 = [8,11,7,19,6,9,13,15]
+let reminderArray = array2.map { number in
+    return number%5
+}
+print(reminderArray)
+
+
+
+// Filter: filter even number only from integer array
+
+let array3 = [0,5,12,3,4,6,8,10,11,7,9,18]
+
+let evenArray = array3.filter { number in
+    return number%2 == 0
+}
+print(evenArray)
+let evenArray1 = array3.filter { $0%2 == 0 }
+print(evenArray1)
+
+
 //: [Next](@next)

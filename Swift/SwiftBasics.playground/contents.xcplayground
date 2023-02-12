@@ -12,5 +12,9 @@
         <page name='HigherOrderFunction'/>
         <page name='Function'/>
         <page name='Closure'/>
+        <page name='Enum'/>
+        <page name='Struct &amp; Classes'/>
+        <page name='oops'/>
+        <page name='Struct'/>
     </pages>
 </playground>

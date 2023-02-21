@@ -12,5 +12,7 @@
         <page name='HigherOrderFunction'/>
         <page name='Function'/>
         <page name='Closure'/>
+        <page name='Properties'/>
+        <page name='Methods'/>
     </pages>
 </playground>

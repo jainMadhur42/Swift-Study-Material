@@ -139,4 +139,26 @@ var stepCounter = StepCounter()
 stepCounter.totalStep = 200
 stepCounter.totalStep = 360
 
+
+
+//1. you can't create new stored property inside the extension.
+// 2. You can create computed property inside the extension.
+// 3. you can't add lazy properties inside the extension.
+extension Circle {
+    
+    var volume: Float {
+        return Float(3.14 * Double(radius * radius))
+    }
+    
+    // lazy var display: String = "Madhur"
+    
+    func calculateVolume() -> Float {
+        return Float(3.14 * Double(radius * radius))
+    }
+}
+
+var circle1 = Circle(radius: 10)
+circle1.calculateVolume()
+circle1.volume
+
 //: [Next](@next)

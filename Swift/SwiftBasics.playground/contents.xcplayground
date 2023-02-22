@@ -12,11 +12,12 @@
         <page name='HigherOrderFunction'/>
         <page name='Function'/>
         <page name='Closure'/>
-        <page name='Properties'/>
-        <page name='Methods'/>
         <page name='Enum'/>
-        <page name='Struct &amp; Classes'/>
+        <page name='Methods'/>
         <page name='oops'/>
+        <page name='Properties'/>
+        <page name='Struct &amp; Classes'/>
         <page name='Struct'/>
+        <page name='Access Specifier'/>
     </pages>
 </playground>

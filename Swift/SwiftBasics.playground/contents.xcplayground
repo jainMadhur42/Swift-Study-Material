@@ -19,5 +19,6 @@
         <page name='Struct &amp; Classes'/>
         <page name='Struct'/>
         <page name='Access Specifier'/>
+        <page name='Inheritance'/>
     </pages>
 </playground>

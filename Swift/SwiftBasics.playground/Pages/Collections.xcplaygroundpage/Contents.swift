@@ -6,7 +6,7 @@ var greeting = "Hello, playground"
 
 // Array
 // Sets
-// Dictionary
+// Dictionary: Collection of key value pair
 // Tuple
 
 // Array -> Collections of similar data type

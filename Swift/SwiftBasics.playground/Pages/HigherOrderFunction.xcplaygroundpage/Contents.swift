@@ -15,7 +15,7 @@ import Foundation
 
 
 // Sorted:
-let numbers = [0,2,1,3,6,4,9,7,8]
+let numbers = [2,1,3,6,4,9,7,8]
 let decendingNumber = numbers.sorted { number1, number2 in
     print("number1 \(number1)")
     print("number2 \(number2)")
@@ -54,6 +54,10 @@ var result = numbers.reduce(0) { partialResult, number in
     return partialResult + number
 }
 
+
+result = numbers.reduce(1) { partialResult,number in
+    partialResult * number
+}
 print(result)
 
 

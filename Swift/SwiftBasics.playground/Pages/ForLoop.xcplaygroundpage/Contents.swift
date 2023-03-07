@@ -75,6 +75,9 @@ for i in 1...5 {
 
 
 
+for (index,number) in numbers.enumerated() {
+    print("number \(number) at \(index)")
+}
 
 
 // Write one code which print only even value till 20

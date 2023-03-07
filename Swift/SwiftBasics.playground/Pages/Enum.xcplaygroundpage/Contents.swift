@@ -23,6 +23,10 @@ enum WeekDays: CaseIterable {
     case sunday
 }
 
+for weekday in WeekDays.allCases {
+    print(weekday)
+}
+
 var currentWeekDay = WeekDays.sunday
 print(currentWeekDay)
 

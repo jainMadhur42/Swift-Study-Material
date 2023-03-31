@@ -20,5 +20,10 @@
         <page name='Struct'/>
         <page name='Access Specifier'/>
         <page name='Inheritance'/>
+        <page name='Protocol'/>
+        <page name='Initialization'/>
+        <page name='InitWithSuperClass'/>
+        <page name='Deinit'/>
+        <page name='ARC'/>
     </pages>
 </playground>

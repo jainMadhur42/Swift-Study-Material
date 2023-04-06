@@ -25,5 +25,8 @@
         <page name='InitWithSuperClass'/>
         <page name='Deinit'/>
         <page name='ARC'/>
+        <page name='Optional Chaining'/>
+        <page name='Generics'/>
+        <page name='Error Handling'/>
     </pages>
 </playground>
